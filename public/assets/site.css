@@ -19,3 +19,17 @@
 
 /* Brand icons supplied for social contact links. */
 .social-icon{display:inline-block;width:24px;height:24px;object-fit:contain;flex-shrink:0;vertical-align:middle;margin-right:9px}.footer-links a{display:inline-flex;align-items:center}.footer-links .social-icon{width:20px;height:20px}
+
+/* Photographic tech support hero, inspired by the Semester-Ready creative. */
+.tech-scene.tech-scene-photo{display:block;min-height:0;aspect-ratio:6/5;background:#0c0d0e;border:1px solid #5a452c;border-radius:30px;box-shadow:0 22px 65px #0003;color:#faf7ef}
+.tech-scene-photo:before{display:none}
+.tech-support-photo{display:block;width:100%;height:100%;object-fit:cover}
+.tech-scene-photo:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#05060799 0%,transparent 27%,transparent 67%,#050607d9 100%);z-index:0}
+.tech-scene-photo .scene-top{z-index:1;left:25px;right:25px;top:25px;color:#e7c18b;font-size:10px;letter-spacing:1.2px}
+.tech-scene-photo .scene-tag .dot{background:#ffb32c;box-shadow:0 0 10px #ffb32c66}
+.photo-caption{position:absolute;z-index:1;left:27px;right:27px;bottom:24px;display:flex;flex-direction:column;gap:5px}
+.photo-caption strong{font-size:clamp(21px,2.1vw,29px);font-weight:500;line-height:1.15;letter-spacing:-.7px;color:#fff9ec}
+.photo-caption small{color:#c8c3b9;font-size:11px}
+.photo-status{display:flex;align-items:center;gap:7px;color:#edbb6c;font:8px monospace;letter-spacing:1.5px;margin-bottom:3px}
+.photo-status>span{width:5px;height:5px;border-radius:50%;background:#ffb32c}
+@media(max-width:600px){.tech-scene.tech-scene-photo{border-radius:23px;aspect-ratio:6/5}.tech-scene-photo .scene-top{left:20px;right:20px;top:20px;font-size:8px;letter-spacing:.6px}.photo-caption{left:21px;bottom:20px}.photo-caption strong{font-size:23px}.photo-caption small{font-size:10px}.photo-status{font-size:7px}}
