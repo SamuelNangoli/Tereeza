@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111413">
+  <meta name="description" content="See how Tereeza tech help works: describe the issue, chat on WhatsApp and agree on a plan.">
+  <title>How it works — Tereeza</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('tereeza-theme'); } catch (_) {}
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body data-page="how-it-works">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a href="index.html" class="brand" aria-label="Tereeza home"><img class="brand-logo brand-logo-dark" src="assets/tereeza-logo-dark.png" alt="Tereeza" width="4368" height="1104"><img class="brand-logo brand-logo-light" src="assets/tereeza-logo-light.png" alt="Tereeza" width="4368" height="1104"></a>
+      <nav class="nav-links" id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="how-it-works.html" aria-current="page">How it works</a><a href="meet-tereeza.html">Meet Tereeza</a></nav>
+      <a class="pill" href="index.html#inquiry">Let’s fix it <span class="arr" aria-hidden="true">↗</span></a>
+      <button type="button" class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode"><svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4a8.5 8.5 0 1 0 11.4 11.4Z"/></svg></button>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+  <main id="main" class="inner-page">
+<div class="wrap breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>How it works</span></div><section class="section process-section" id="how-it-works" aria-labelledby="process-title"><div class="wrap process-grid"><div class="process-intro"><div class="eyebrow">How it works / A simple start</div><h1 id="process-title">From “it’s not working”<br>to a clear next step.</h1></div><div class="steps"><div class="step"><div class="step-num">01</div><h2>Tell us what’s wrong</h2><p>Choose a service and share your device and the problem.</p></div><div class="step"><div class="step-num">02</div><h2>Let’s talk on WhatsApp</h2><p>Your details become a ready-to-send message. You review and send it.</p></div><div class="step"><div class="step-num">03</div><h2>Agree on a plan</h2><p>We discuss the issue, the available help and the cost before getting started.</p></div></div></div></section><div class="wrap"><div class="page-cta"><p>Ready for a clear next step?</p><div class="actions"><a class="pill" href="index.html#inquiry">Let’s fix it <span class="arr" aria-hidden="true">↗</span></a><a class="pill secondary" href="services.html">Explore services <span class="arr" aria-hidden="true">↗</span></a></div></div></div>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><a href="index.html" class="brand" aria-label="Tereeza home"><img class="brand-logo brand-logo-dark" src="assets/tereeza-logo-dark.png" alt="Tereeza" width="4368" height="1104"><img class="brand-logo brand-logo-light" src="assets/tereeza-logo-light.png" alt="Tereeza" width="4368" height="1104"></a><p>Everyday tech, back on track.<br>© <span id="year">2026</span> Tereeza.</p></div><div class="footer-links"><a href="https://wa.me/256753480959?text=Hi%20Tereeza%2C%20I%20need%20help%20with%20my%20tech." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="https://www.instagram.com/tereezatech/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
+</body>
+</html>
