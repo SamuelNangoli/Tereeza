@@ -4,7 +4,10 @@ A responsive website for Tereeza's everyday tech services, built with HTML, CSS 
 
 ## Features
 
-- Separate Home, Services, How it works and Meet Tereeza pages.
+- Separate Home, Services, How it works and Meet Tereeza pages with the updated image-led layouts.
+- Manrope headings and Inter body text via Google Fonts, with matching offline fallbacks.
+- Original emerald, midnight and warm amber palette in light and dark modes.
+- Service-category filtering and the supplied Tereeza favicon in browser and device formats.
 - Light and dark modes with a saved preference.
 - Mobile navigation and accessible form controls.
 - Service buttons that select the matching option in the Home inquiry form.
@@ -59,3 +62,5 @@ Update page content in the four HTML files, shared appearance in `public/assets/
 - Instagram: [@tereezatech](https://www.instagram.com/tereezatech/)
 
 Inquiries are sent only when the visitor sends the prepared message in WhatsApp. The website does not store inquiries on a server.
+
+See `public/ASSET-NOTES.md` for image provenance, font licenses and the plan for replacing the supporting service imagery with the original service posters.
