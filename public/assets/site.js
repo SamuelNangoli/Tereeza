@@ -78,7 +78,10 @@
     const inquiryParams = new URLSearchParams(location.search);
     const selected = choices.get(inquiryParams.get('service'));
     if (selected) service.value = selected;
-    const teamMembers = new Map([['matthew-mukasa', 'Matthew Mukasa']]);
+    const teamMembers = new Map([
+      ['matthew-mukasa', 'Matthew Mukasa'],
+      ['tumusiime-marvin', 'Tumusiime Marvin']
+    ]);
     let selectedMember = teamMembers.get(inquiryParams.get('team'));
     const teamPreference = document.getElementById('team-preference');
     if (selectedMember) {
