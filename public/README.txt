@@ -16,7 +16,8 @@ PAGES
 index.html — Landing page and Let's fix it WhatsApp inquiry form.
 services.html — OS, networking, hardware, device setup, and software development and maintenance services.
 how-it-works.html — The steps for getting tech help.
-meet-tereeza.html — Meet Samuel Nangoli, with his supplied portrait.
+meet-tereeza.html — Meet Samuel Nangoli and the team, including Matthew Mukasa.
+Team buttons select a service and carry a team-member preference into the inquiry.
 
 INQUIRIES
 Service buttons return to the landing page and select the chosen service.

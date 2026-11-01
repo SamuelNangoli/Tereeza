@@ -11,6 +11,7 @@ A responsive website for Tereeza's everyday tech services, built with HTML, CSS 
 - Five service areas, including software development and open-source maintenance, plus networking with Wi-Fi, LAN, router configuration and network protection.
 - Light and dark modes with a saved preference.
 - Mobile navigation and accessible form controls.
+- Team profiles with roles, specialties and service inquiries that carry a team-member preference.
 - Service buttons that select the matching option in the Home inquiry form.
 - A WhatsApp inquiry flow that prepares a message for the visitor to review and send.
 - Original Tereeza logos and Samuel Nangoli's founder portrait.

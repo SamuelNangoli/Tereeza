@@ -75,8 +75,24 @@
       ['setup', 'Device setup & tune-ups'],
       ['software', 'Software development & maintenance']
     ]);
-    const selected = choices.get(new URLSearchParams(location.search).get('service'));
+    const inquiryParams = new URLSearchParams(location.search);
+    const selected = choices.get(inquiryParams.get('service'));
     if (selected) service.value = selected;
+    const teamMembers = new Map([['matthew-mukasa', 'Matthew Mukasa']]);
+    let selectedMember = teamMembers.get(inquiryParams.get('team'));
+    const teamPreference = document.getElementById('team-preference');
+    if (selectedMember) {
+      document.getElementById('team-preference-text').textContent = 'Team preference: ' + selectedMember;
+      teamPreference.hidden = false;
+    }
+    document.getElementById('clear-team-preference').addEventListener('click', () => {
+      selectedMember = undefined;
+      teamPreference.hidden = true;
+      document.getElementById('form-status').hidden = true;
+      const url = new URL(location.href);
+      url.searchParams.delete('team');
+      history.replaceState(null, '', url);
+    });
     form.addEventListener('input', () => { document.getElementById('form-status').hidden = true; });
     form.addEventListener('submit', e => {
       const device = document.getElementById('device');
@@ -91,7 +107,7 @@
         }
       }
       const name = document.getElementById('customer-name').value.trim();
-      const message = ['Hi Tereeza! I’d like some tech help.', name ? 'Name: ' + name : null, 'Service: ' + service.value, 'Device/system: ' + device.value.trim(), 'Problem: ' + problem.value.trim(), '', 'Please let me know the next steps and the cost.'].filter(line => line !== null).join('\n');
+      const message = ['Hi Tereeza! I’d like some tech help.', name ? 'Name: ' + name : null, 'Service: ' + service.value, selectedMember ? 'Preferred team member: ' + selectedMember : null, 'Device/system: ' + device.value.trim(), 'Problem: ' + problem.value.trim(), '', 'Please let me know the next steps and the cost.'].filter(line => line !== null).join('\n');
       document.getElementById('whatsapp-message').value = message;
       document.getElementById('whatsapp-fallback').href = 'https://wa.me/256753480959?text=' + encodeURIComponent(message);
       document.getElementById('form-status').hidden = false;
