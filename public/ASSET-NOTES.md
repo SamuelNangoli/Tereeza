@@ -35,3 +35,7 @@ All favicon formats are derived directly from the supplied `tereeza-icon-dark-51
 ## Networking service image — 1 November 2026
 
 `assets/service-networking.webp` is an optimized copy of the image supplied as "Computer network node.jpeg". The original is retained as `assets/networking-original.jpeg`, including its existing "Made with AI" label. The networking image uses a top-right position so that label stays in view. This replaces the generated router picture in the service cards. The software development and maintenance card reuses the existing software/device studio image.
+
+## Team portrait — 1 November 2026
+
+`assets/tumusiime-marvin.webp` is an optimized copy of the supplied `marvin.PNG` portrait, used for Tumusiime Marvin’s team avatar. The original is retained as `assets/tumusiime-marvin-original.png`. The website fits the portrait into the existing responsive avatar frame using CSS; the supplied photo itself is unchanged.

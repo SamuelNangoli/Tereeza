@@ -14,7 +14,7 @@ A responsive website for Tereeza's everyday tech services, built with HTML, CSS 
 - Team profiles for Matthew Mukasa (Software Engineer) and Tumusiime Marvin (Network Engineer), with specialties and service inquiries that carry a team-member preference.
 - Service buttons that select the matching option in the Home inquiry form.
 - A WhatsApp inquiry flow that prepares a message for the visitor to review and send.
-- Original Tereeza logos and Samuel Nangoli's founder portrait.
+- Original Tereeza logos, Samuel Nangoli's founder portrait, and Tumusiime Marvin's supplied team photo.
 
 ## Preview locally
 
