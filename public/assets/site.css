@@ -45,3 +45,16 @@ h1,h2,h3,.footer-heading{font-family:Manrope,'Manrope Offline',Arial,Helvetica,s
 /* The supplied Lucide chevron is the shared forward-action icon. */
 .preview-icon{display:inline-block;width:24px;height:24px;flex:none;vertical-align:middle}
 .circle>.preview-icon,.image-action>.preview-icon{display:block}
+
+/* Service coverage for software maintenance and networking. */
+.service-strip{flex-wrap:wrap;gap:16px 24px}
+.service-image>img.networking-image{object-position:right top}
+.service-scope{list-style:none;display:grid;gap:10px;padding:0;margin:18px 0 0;color:var(--muted);font-size:16px;font-weight:400;line-height:1.6}
+.service-scope li{position:relative;padding-left:17px}
+.service-scope li:before{content:"•";position:absolute;left:0;color:var(--accent)}
+.service-card-wide,.has-single-service>.service-card{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.service-card-wide .service-image,.has-single-service .service-image{aspect-ratio:4/3}
+.service-card-wide .service-meta,.has-single-service .service-meta{padding-block:20px}
+.home-services .service-card-wide .service-link{margin-top:18px}
+@media(max-width:900px){.service-strip span:last-child{grid-column:1/-1}.service-card-wide{gap:24px}}
+@media(max-width:640px){.service-card-wide,.has-single-service>.service-card{grid-template-columns:1fr;gap:0}.service-card-wide .service-meta,.has-single-service .service-meta{padding-block:18px 0}.service-scope{gap:9px}}

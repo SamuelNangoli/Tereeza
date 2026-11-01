@@ -60,13 +60,21 @@
     });
     cards.forEach(card => { card.hidden = selected !== 'all' && selected !== card.dataset.group; });
     const count = cards.filter(card => !card.hidden).length;
+    document.querySelector('.services-detailed').classList.toggle('has-single-service', count === 1);
     document.getElementById('service-count').textContent = `${count} service${count === 1 ? '' : 's'}`;
   }));
 
   const form = document.getElementById('inquiry-form');
   if (form) {
     const service = document.getElementById('service');
-    const choices = new Map([['os', 'OS installation & recovery'], ['wifi', 'Wi-Fi & connectivity'], ['hardware', 'Hardware troubleshooting'], ['setup', 'Device setup & tune-ups']]);
+    const choices = new Map([
+      ['os', 'OS installation & recovery'],
+      ['networking', 'Networking & troubleshooting'],
+      ['wifi', 'Networking & troubleshooting'],
+      ['hardware', 'Hardware troubleshooting'],
+      ['setup', 'Device setup & tune-ups'],
+      ['software', 'Software development & maintenance']
+    ]);
     const selected = choices.get(new URLSearchParams(location.search).get('service'));
     if (selected) service.value = selected;
     form.addEventListener('input', () => { document.getElementById('form-status').hidden = true; });
@@ -76,14 +84,14 @@
       for (const field of [device, problem]) {
         if (field.value.trim().length < (field === problem ? 5 : 1)) {
           e.preventDefault();
-          field.setCustomValidity(field === problem ? 'Please describe the problem in at least 5 characters.' : 'Please enter your device.');
+          field.setCustomValidity(field === problem ? 'Please describe the problem in at least 5 characters.' : 'Please enter your device or system.');
           field.reportValidity();
           field.addEventListener('input', () => field.setCustomValidity(''), { once: true });
           return;
         }
       }
       const name = document.getElementById('customer-name').value.trim();
-      const message = ['Hi Tereeza! I’d like some tech help.', name ? 'Name: ' + name : null, 'Service: ' + service.value, 'Device: ' + device.value.trim(), 'Problem: ' + problem.value.trim(), '', 'Please let me know the next steps and the cost.'].filter(line => line !== null).join('\n');
+      const message = ['Hi Tereeza! I’d like some tech help.', name ? 'Name: ' + name : null, 'Service: ' + service.value, 'Device/system: ' + device.value.trim(), 'Problem: ' + problem.value.trim(), '', 'Please let me know the next steps and the cost.'].filter(line => line !== null).join('\n');
       document.getElementById('whatsapp-message').value = message;
       document.getElementById('whatsapp-fallback').href = 'https://wa.me/256753480959?text=' + encodeURIComponent(message);
       document.getElementById('form-status').hidden = false;

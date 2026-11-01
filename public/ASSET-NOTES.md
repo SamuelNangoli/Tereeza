@@ -31,3 +31,7 @@ Desktop hero headings are 56px/700, section headings 36px/700, service names 18p
 ## Favicon
 
 All favicon formats are derived directly from the supplied `tereeza-icon-dark-512.png` brand asset. The SVG embeds those original pixels. ICO, 32px PNG, 192px/512px manifest icons and a 180px Apple touch icon are included. Every page references the updated icon set with a versioned URL to refresh the previous browser icon.
+
+## Networking service image — 1 November 2026
+
+`assets/service-networking.webp` is an optimized copy of the image supplied as "Computer network node.jpeg". The original is retained as `assets/networking-original.jpeg`, including its existing "Made with AI" label. The networking image uses a top-right position so that label stays in view. This replaces the generated router picture in the service cards. The software development and maintenance card reuses the existing software/device studio image.

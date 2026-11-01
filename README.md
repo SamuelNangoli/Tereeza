@@ -8,6 +8,7 @@ A responsive website for Tereeza's everyday tech services, built with HTML, CSS 
 - Manrope headings and Inter body text via Google Fonts, with matching offline fallbacks.
 - Original emerald, midnight and warm amber palette in light and dark modes.
 - Service-category filtering and the supplied Tereeza favicon in browser and device formats.
+- Five service areas, including software development and open-source maintenance, plus networking with Wi-Fi, LAN, router configuration and network protection.
 - Light and dark modes with a saved preference.
 - Mobile navigation and accessible form controls.
 - Service buttons that select the matching option in the Home inquiry form.

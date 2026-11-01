@@ -14,7 +14,7 @@ No installation, server or build command is required for the downloaded website.
 
 PAGES
 index.html — Landing page and Let's fix it WhatsApp inquiry form.
-services.html — OS, Wi-Fi, hardware and device setup services.
+services.html — OS, networking, hardware, device setup, and software development and maintenance services.
 how-it-works.html — The steps for getting tech help.
 meet-tereeza.html — Meet Samuel Nangoli, with his supplied portrait.
 
